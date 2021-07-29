@@ -10,13 +10,25 @@
 //   return headlines;
 // };
 
+
 export const fetchHeadlines = async () => {
   const res = await fetch(
-    'https://newsapi.org/v2/everything?domains=wsj.com&apiKey={process.env.API_KEY}'
+    `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${process.env.API_KEY}`
   );
 
   console.log('sunny');
   const json = await res.json();
   return json;
 };
+
+
+// export const fetchHeadlines = async () => {
+//   const res = await fetch(
+//     'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=3893fe0755074226a003974d94fab029'
+//   );
+
+//   console.log('sunny');
+//   const json = await res.json();
+//   return json;
+// };
 
