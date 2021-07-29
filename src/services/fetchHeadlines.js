@@ -24,7 +24,7 @@ export const fetchHeadlines = async () => {
 
 // export const fetchHeadlines = async () => {
 //   const res = await fetch(
-//     'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=3893fe0755074226a003974d94fab029'
+//     'https://newsapi.org/v2/everything?domains=wsj.com&apiKey=actualAPI_KEY_HERE'
 //   );
 
 //   console.log('sunny');
