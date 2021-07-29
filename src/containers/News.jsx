@@ -13,10 +13,10 @@ export default class NewsApi extends Component {
       this.setState({ news, loading: false });
     }
 
-    handleChange({ hello }) {
-      console.log(hello);
-      this.setState({ search: hello.value });
-    }
+    // handleChange({ target }) {
+    //   console.log(target);
+    //   this.setState({ search: target.value });
+    // }
 
     render() {
       const { news, loading } = this.state;

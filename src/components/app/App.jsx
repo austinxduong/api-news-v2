@@ -1,6 +1,6 @@
 import React from 'react';
-import Headline from '../headlines/Headline';
+import News from '../../containers/News';
 
 export default function App() {
-  return <Headline />;
+  return <News />;
 }
