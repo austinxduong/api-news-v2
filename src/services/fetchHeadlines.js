@@ -18,7 +18,9 @@ export const fetchHeadlines = async () => {
 
   console.log('sunny');
   const json = await res.json();
-  return json;
+  console.log(json.articles);
+
+  return json.articles;
 };
 
 
