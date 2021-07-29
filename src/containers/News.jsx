@@ -5,11 +5,13 @@ import { fetchHeadlines } from '../services/fetchHeadlines';
 export default class NewsApi extends Component {
     state = {
       loading: true,
-      news: [],
+      news: {},
     }
 
     async componentDidMount() {
+        // console.log('hello');
       const news = await fetchHeadlines();
+      console.log('hello');
       this.setState({ news, loading: false });
     }
 
