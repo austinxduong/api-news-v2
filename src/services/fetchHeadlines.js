@@ -13,7 +13,7 @@
 
 export const fetchHeadlines = async () => {
   const res = await fetch(
-    `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${process.env.API_KEY}`
+    `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=${process.env.API_KEY}`
   );
 
   // console.log('sunny');
