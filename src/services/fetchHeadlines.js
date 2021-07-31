@@ -16,9 +16,9 @@ export const fetchHeadlines = async () => {
     `https://newsapi.org/v2/everything?domains=wsj.com&apiKey=${process.env.API_KEY}`
   );
 
-  console.log('sunny');
+  // console.log('sunny');
   const json = await res.json();
-  console.log(json.articles);
+  // console.log(json.articles);
 
   return json.articles;
 };
