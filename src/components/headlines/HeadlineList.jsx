@@ -3,7 +3,7 @@ import React from 'react';
 import Headline from './Headline';
 
 const HeadlineList = ({ news }) => {
-    console.log(news);
+  // console.log(news);
   const headlineElement = news.map(headline => (
     <li key={headline.title}>
       <Headline {...headline} />
