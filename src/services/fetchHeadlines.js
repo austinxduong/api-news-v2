@@ -19,7 +19,6 @@ export const fetchHeadlines = async () => {
   // console.log('sunny');
   const json = await res.json();
   // console.log(json.articles);
-
   return json.articles;
 };
 
@@ -33,4 +32,13 @@ export const fetchHeadlines = async () => {
 //   const json = await res.json();
 //   return json;
 // };
+
+export const fetchUserInputField = async (searchUserInput) => {
+  const res = await fetch(
+    `https://newsapi.org/v2/top-headlines?q{searchUserInput}h&apiKey=${process.env.API_KEY}`
+  )
+  const json = await res.json();
+  return json.articles;
+};
+
 
