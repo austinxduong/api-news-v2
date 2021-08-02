@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const ArticleSearch = ({ searchArticle, onChange, onSubmit }) => {
   return (
     <form onSubmit={onSubmit}>
-      <label presentationalDisplay="search-article">Search Bar: </label>
+      <label display="search-article">Search Bar: </label>
       <input
         id="search-article"
         type="text"
