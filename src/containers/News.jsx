@@ -21,14 +21,14 @@ export default class NewsApi extends Component {
 
     handleChange({ target }) {
       console.log(target);
-      this.setState({ searchArticle: target.value });
+      this.setState({ [target.name]: target.value });
     }
 
     handleSubmit = async (e) => {
       e.preventDefault();
       this.setState({ loading: true });
       // eslint-disable-next-line max-len
-      const userTypesIntoInputField = await fetchUserInputField(this.state.articleSearch);
+      const userTypesIntoInputField = await fetchUserInputField(this.state.searchArticle);
       this.setState({
         loading: false,
         news: userTypesIntoInputField,
@@ -43,7 +43,7 @@ export default class NewsApi extends Component {
         <>
 
           <ArticleSearch
-            articleSearch={this.state.articleSearch}
+            searchArticle={this.state.searchArticle}
             onChange={this.handleChange}
             onSubmit={this.handleSubmit}
           />
